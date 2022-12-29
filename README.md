@@ -14,4 +14,4 @@ npm run serve
 
 ## About
 
-An exercise to learn Vue.
+A simple example Vue project
