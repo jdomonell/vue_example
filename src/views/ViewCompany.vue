@@ -35,6 +35,9 @@
         </div>
       </div>
       <div class="column">
+        <div class="">
+          <h2 class="subtitle">Manage Subscriptions</h2>
+        </div>
         <div class="box">
           <p class="label">Edit Employees</p>
           <CountUpdater :count="company.numberOfEmployees" @submit="handleEmployeeCountChange" />

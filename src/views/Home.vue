@@ -1,16 +1,21 @@
 <template>
   <div class="container box is-max-desktop">
-    <div class="title">Companies</div>
-    <div class="box" v-for="company in companies" :key="company.id">
-      <h2 class="subtitle">{{ company.name }}</h2>
-      <div class="buttons">
-        <button :id="company.id" v-on:click="handleViewCompany($event)" class="button is-light">
-          View
-        </button>
-        <button :id="company.id" v-on:click="handleEditCompany($event)" class="button is-info">
-          Edit
-        </button>
+    <div class="columns">
+      <div class="column">
+        <div class="title">Company Subscription Manager</div>
+        <div class="box" v-for="company in companies" :key="company.id">
+          <h1 class="subtitle is-2">{{ company.name }}</h1>
+          <div class="buttons">
+            <button :id="company.id" v-on:click="handleViewCompany($event)" class="button is-light">
+              View and Manage Subscriptions
+            </button>
+            <button :id="company.id" v-on:click="handleEditCompany($event)" class="button is-info">
+              Edit Company Details
+            </button>
+          </div>
+        </div>
       </div>
+      <!---->
     </div>
   </div>
 </template>
